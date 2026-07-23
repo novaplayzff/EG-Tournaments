@@ -14,6 +14,8 @@ function closePopup(){
 
 function submitForm(){
 
+const tournament = document.getElementById("tournamentName").innerText;
+    
     let name = document.getElementById("playerName").value;
     let uid = document.getElementById("playerUID").value;
     let email = document.getElementById("playerEmail").value;
@@ -28,7 +30,21 @@ function submitForm(){
 
     }
 
-const tournament = document.getElementById("tournamentName").innerText;
+const registration = {
+    tournament: tournament,
+    playerName: name,
+    uid: uid,
+    email: email,
+    phone: phone,
+    paymentMethod: payment,
+    transactionId: transaction,
+    time: new Date().toLocaleString()
+};
+
+window.dbPush(
+    window.dbRef(window.db, "registrations"),
+    registration
+);
     
     alert("Registration Submitted Successfully!");
 
