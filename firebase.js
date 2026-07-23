@@ -1,5 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
+import {
+  getDatabase,
+  ref,
+  push
+} from "https://www.gstatic.com/firebasejs/12.1.0/firebase-database.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD6842PdiIFSU_H_jF_LXIIYI9IfqvsB80",
@@ -14,5 +18,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const database = getDatabase(app);
 
-// Make available to other scripts
-window.firebaseDatabase = database;;
+// Global variables
+window.db = database;
+window.dbRef = ref;
+window.dbPush = push;
