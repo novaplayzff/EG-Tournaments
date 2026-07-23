@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MG Tournaments</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EG Tournaments</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar">
+<nav>
 
-    <div class="logo">
-        🎮 MG Tournaments
-    </div>
+<div class="logo">
 
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#tournaments">Tournaments</a></li>
-        <li><a href="#rules">Rules</a></li>
-        <li><a href="#payment">Payment</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+🎮 EG Tournaments
+
+</div>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#tournaments">Tournaments</a></li>
+
+<li><a href="#rules">Rules</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
 
 </nav>
 
-<!-- ================= HEADER ================= -->
+<!-- ================= HERO ================= -->
 
 <header>
 
-<h1>🏆 MG Tournaments</h1>
+<div class="hero">
 
-<p>Pakistan's Best Free Fire Tournament Platform</p>
+<h1>
 
-<div class="hero-buttons">
+FREE FIRE
 
-<button onclick="document.getElementById('tournaments').scrollIntoView({behavior:'smooth'})">
+<br>
+
+TOURNAMENTS
+
+</h1>
+
+<p>
+
+Play Fair • Win Cash • Become Champion
+
+</p>
+
+<button onclick="document.location='#tournaments'">
+
 Join Tournament
-</button>
 
-<button class="btn2">
-WhatsApp
 </button>
 
 </div>
@@ -54,211 +77,8 @@ WhatsApp
 
 <section id="tournaments">
 
-<h2>🏆 Available Tournaments</h2>
+<h2>
 
-<div class="card">
+🔥 Live Tournaments
 
-<h3>⚔️ Clash Squad</h3>
-
-<p><b>Entry Fee:</b> Rs.150 / Player</p>
-
-<p><b>Players:</b> 8</p>
-
-<p><b>Winning Prize:</b> Rs.270 / Player</p>
-
-<button onclick="openPopup('Clash Squad')">
-Join Now
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🪂 Battle Royale</h3>
-
-<p><b>Entry Fee:</b> Rs.40 / Player</p>
-
-<p><b>Players:</b> 50</p>
-
-<p><b>Kill Reward:</b> Rs.10 / Kill</p>
-
-<p><b>Booyah Reward:</b> 2X Kill Reward</p>
-
-<button onclick="openPopup('Battle Royale')">
-Join Now
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🐺 Lone Wolf 1v1</h3>
-
-<p><b>Entry Fee:</b> Rs.50</p>
-
-<p><b>Winner Prize:</b> Rs.80</p>
-
-<button onclick="openPopup('Lone Wolf 1v1')">
-Join Now
-</button>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>🐺 Lone Wolf 2v2</h3>
-
-<p><b>Entry Fee:</b> Rs.60 / Player</p>
-
-<p><b>Winning Prize:</b> Rs.100 / Player</p>
-
-<button onclick="openPopup('Lone Wolf 2v2')">
-Join Now
-</button>
-
-</div>
-
-</section>
-
-<!-- ================= PAYMENT ================= -->
-
-<section id="payment">
-
-<h2>💳 Payment</h2>
-
-<p>
-After registration our admin will send you
-EasyPaisa / JazzCash payment details.
-</p>
-
-</section>
-
-<!-- ================= RULES ================= -->
-
-<section id="rules">
-
-<h2>📜 Tournament Rules</h2>
-
-<p>✅ No Hacks or Cheats</p>
-
-<p>✅ Respect All Players</p>
-
-<p>✅ Follow Match Timing</p>
-
-<p>✅ No Teaming</p>
-
-<p>✅ Admin Decision is Final</p>
-
-</section>
-
-<!-- ================= DISCLAIMER ================= -->
-
-<section>
-
-<h2>⚠️ Disclaimer</h2>
-
-<p>
-
-MG Tournaments is an independent esports platform.
-
-We are NOT affiliated with Garena Free Fire.
-
-</p>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact">
-
-<h2>📞 Contact</h2>
-
-<p>Email : support@mgtournaments.com</p>
-
-<p>WhatsApp : +92 300 1234567</p>
-
-</section>
-
-<!-- ================= POPUP ================= -->
-
-<div id="joinPopup" class="popup">
-
-<div class="popup-box">
-
-<span class="close"
-onclick="closePopup()">
-
-×
-
-</span>
-
-<h2>🎮 Join Tournament</h2>
-
-<h3 id="tournamentName"></h3>
-
-<input
-type="text"
-placeholder="Player Name"
-required>
-
-<input
-type="number"
-placeholder="Free Fire UID"
-required>
-
-<input
-type="email"
-placeholder="Email"
-required>
-
-<input
-type="tel"
-placeholder="WhatsApp Number"
-required>
-
-<select>
-
-<option>Select Payment</option>
-
-<option>EasyPaisa</option>
-
-<option>JazzCash</option>
-
-</select>
-
-<input
-type="text"
-placeholder="Transaction ID">
-
-<button>
-
-Submit Registration
-
-</button>
-
-</div>
-
-</div>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-<p>
-
-© 2026 MG Tournaments
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+</h2>
