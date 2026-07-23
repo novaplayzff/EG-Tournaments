@@ -28,6 +28,8 @@ function submitForm(){
 
     }
 
+const tournament = document.getElementById("tournamentName").innerText;
+    
     alert("Registration Submitted Successfully!");
 
     closePopup();
