@@ -1,38 +1,17 @@
-// Firebase App import
-import { initializeApp } from 
-"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-
-// Firebase Authentication import
-import { getAuth } from 
-"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
-
-// Firebase Console se mila hua code yahan ayega
+// Your web app's Firebase configuration
 const firebaseConfig = {
-
-apiKey: "YOUR_API_KEY",
-
-authDomain: "YOUR_PROJECT.firebaseapp.com",
-
-projectId: "YOUR_PROJECT_ID",
-
-storageBucket: "YOUR_BUCKET",
-
-messagingSenderId: "YOUR_ID",
-
-appId: "YOUR_APP_ID"
-
+  apiKey: "AIzaSyD6842PdiIFSU_H_jF_LXIIYI9IfqvsB80",
+  authDomain: "eg-tournaments-c5bff.firebaseapp.com",
+  projectId: "eg-tournaments-c5bff",
+  storageBucket: "eg-tournaments-c5bff.firebasestorage.app",
+  messagingSenderId: "491069840745",
+  appId: "1:491069840745:web:bb9ca9027e8289ffbaf1f8"
 };
 
-
-// Firebase start karna
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-
-// Login system activate karna
-const auth = getAuth(app);
-
-
-// Dusri files me use karne ke liye export
-export { auth };
